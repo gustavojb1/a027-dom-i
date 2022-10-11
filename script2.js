@@ -15,9 +15,7 @@ function addFruta() {
   } else {
     frutas.push(fruta);
     ul = document.getElementById("lista-de-frutas");
-    ul.innerHTML += `<li id="fruta-${id}">${
-      frutas[Number(frutas.length) - 1]
-    }</li>`;
+    ul.innerHTML += `<li id="fruta-${id}">${frutas[frutas.length - 1]}</li>`;
     id++;
   }
 }
